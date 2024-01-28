@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a9c7e54208.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="heading"><span style="color:green;">M</span>UKIL <span style="color:green;">K</span>UMAR
+                </h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Hey All</p>
+                <h1>I am <span style="color:green;">Mukil</span><br>Student, VIT Chennai</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    A dedicated Computer Science major at Vellore Institute of Technology, my academic pursuits are
+                    fueled by a passion for the field. Thriving on collaboration, I find teamwork paramount in
+                    overcoming intricate challenges. Adept in C, C++, SQL, Python, and Java, I'm currently immersed in
+                    Web Development, aiming to make a mark in the tech industry. Swift learning allows me to embrace new
+                    concepts eagerly, staying abreast of industry trends. Leveraging my outgoing nature, I excel in
+                    engaging with peers and mentors, fostering innovative problem-solving. Immersed in coding projects
+                    or group discussions, each aspect of my academic journey brings immense satisfaction. Continual
+                    growth remains my steadfast commitment, igniting my passion for delving into the ever-evolving
+                    realms of computer science.</p>
+
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Structures and Algorithm</span><br>Real Time Application-DSA</li>
+                            <li><span>Web Development</span><br>Web Application Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Vellore Institute of Technology</span><br>Bachelor of Technology - BTech, Computer
+                                Science<br><span style="color:palevioletred">Sep 2022 - Jul 2026<br>CGPA : 8.98</span>
+                            </li>
+                            <li><span>Sri Chaitanya Techno School, Chennai</span><br>HSC<br><span
+                                    style="color:palevioletred">Aug 2020 - Jun 2022</span></li>
+                            <li><span>St. John's Public School - India</span><br>SSC<br><span
+                                    style="color:palevioletred">Jul 2020<br>Grade : 97.8%</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Hacktoberfest</span><br>Join Hacktoberfest, a global event encouraging
+                                participation in open-source projects throughout October. It's a great way to contribute
+                                to the community while honing your coding abilities.<br><span
+                                    style="color:palevioletred">Issued
+                                    October 2023</span></li>
+                            <li><span>Python for Data Science and Machine Learning Bootcamp</span><br> Ideal for
+                                expanding your knowledge in Python and machine learning, this course delves into data
+                                analysis, visualization, and machine learning algorithms.<br><span
+                                    style="color:palevioletred">Issued Apr 2023</span></li>
+                            <li><span>Certificate for the Completion of Data Structure & Algorithm course(Abdul Bari) -
+                                    UDEMY</span><br><span style="color:palevioletred">Issued Nov 2023</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>mukilkumar.k2022@vitstudent.ac.in</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 7358035199</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.instagram.com/mu.kil.k?igsh=cjNvOWZkbnZ2OXB4"><i class="fab fa-instagram"></i></a>
+
+                        <a href="https://github.com/Mukil007"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mukil Kumar</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
